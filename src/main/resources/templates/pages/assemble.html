@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>My Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="styleBody">
+
+<div class="styleHeader" th:insert="fragments/_header :: header"></div>
+
+<h1 class="pageHeader">STEP 3: Put the 2 slices of bread together....VOILA!</h1>
+
+<div class="homePicture">
+    <img th:src="@{/images/sandwich.jpg}" alt="Completed Peanut butter sandwich">
+</div>
+
+<div class="oneBtn">
+    <button class="btn"><a th:href="@{/spread-peanut-butter}">Previous Step</a></button>
+    <button class="btn"><a th:href="@{/}">Home</a></button>
+</div>
+
+<div class="styleFooter" th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="styleBody">
+
+<div class="styleHeader" th:insert="fragments/_header :: header"></div>
+
+<h1 class="pageHeader">STEP 2: Spread peanut butter on both slices of bread</h1>
+
+<div class="homePicture">
+    <img th:src="@{/images/spreading-butter.jpg}" alt="Spreading Peanut Butter">
+    <img th:src="@{/images/buttered-bread.jpg}" alt="Buttered Bread">
+</div>
+
+<div class="oneBtn">
+    <button class="btn"><a th:href="@{/open-bread}">Previous Step</a></button>
+    <button class="btn"><a th:href="@{/assemble}">Next Step</a></button>
+</div>
+
+<div class="styleFooter" th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>
